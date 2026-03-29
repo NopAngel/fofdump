@@ -1,7 +1,7 @@
 #
 #	Makefile
 #
-#  FOFDUMP main build file
+#  FFODUMP main build file
 #	- GPL-3.0
 #
 
@@ -17,9 +17,9 @@ OBJ 	= obj.o
 
 all:
 	$(Q)$(AS) -f elf64 $(SRC) -o $(OBJ)
-	$(Q)$(LD) $(OBJ) -o fofdump
+	$(Q)$(LD) $(OBJ) -o ffodump
 	$(Q)echo " AS   $(SRC)"
 
 clean:
-	$(Q)rm $(OBJ) fofdump
+	$(Q)rm $(OBJ) ffodump
 	$(Q)echo " MKF  clean!"
